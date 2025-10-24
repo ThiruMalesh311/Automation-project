@@ -1,0 +1,40 @@
+1.XPATH BY ATTRIBUTE
+. syntax-1:
+  -----> //tagname[@attribute name='attribute value']
+
+.syntax-2:(when we need to satisfy 2 conditions)
+
+ ------> //tagname[@attribute name1='attribute value1' and @attributename2='attribute value2']
+
+.syntax-3:(when we need to satisfy any one condition)
+
+------> //tagname[@attribute name1='attribute value1' or @attribute name2='attribute value2']
+
+.syntax-4:(when we don't want to satisfy a condition)
+
+------>//tag name[not(@attribute name='attribute value')]
+
+.syntax-5:(when there is only attribute name no attribute value)
+
+---------> //tag name[@attribute name]
+
+2.Xpath by Text Function:
+
+SYNTAX:
+----->1) //TagName[text()='complete tag text']
+                  (or)
+----->2) //TagName[.='complete tag text']
+
+3.Xpath by Contains Function:
+
+SYNTAX:
+----->1) xpath by attribute Partial text:
+               --->//TagName[contains(text(),'partial tag text')]
+
+----->2) xpath by partial value:
+
+                  ---->//TagName[contains(@attribute name='partial Attribute value')]
+
+4.XPATH BY TRAVERSING:
+          1)FORWARD TRAVERSING.
+          2)BACKWARD TRAVERSING.
